@@ -8,13 +8,14 @@ body {
 }
 
 .advice {
-   width: 30%;
+   width: 40%;
    margin: auto;
    background: hsl(217, 19%, 24%);
    height: 300px;
    
    border-radius: 0.3rem;
    margin-top: 10%;
+   overflow: hidden;
 
 }
 
@@ -27,22 +28,6 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 375px) {
-    .advice {
-        width: 80%;
-        margin: auto;
-        margin-top: 30%;
-    }
-    .divider-desktop {
-        display: none;
-    }
-
-    .divider-mobile {
-        display: block;
-        width: 100%;
-    }
-}
-
 .advice-content {
     display: flex;
     flex-direction: column;
@@ -51,6 +36,8 @@ body {
     align-self: center;
     width: 70%;
     margin: auto;
+    min-height: 200px;
+  
 }
 
 .advice h4{
@@ -66,6 +53,7 @@ body {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     text-align: center;
+    font-size: 28px;
 }
 
 .icon-dice {
@@ -77,7 +65,9 @@ body {
     position: absolute;
     background: hsl(150, 100%, 66%);
     border-radius: 50%;
-    margin-top: 29rem;
+    margin-left: 21rem;
+    
+    margin-top: 4.5rem;
 }
 
 .icon-dice:hover {
@@ -88,5 +78,48 @@ body {
 .icon-dice img {
     width: 1.5rem;
     height: 1.5rem;
-
 }
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    padding-top: 27rem; 
+    color: hsl(193, 38%, 86%);
+    font-size: 1rem; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media screen and (max-width: 375px) {
+    .advice {
+        width: 90%;
+        margin: auto;
+        margin-top: 30%;
+    }
+    .divider-desktop {
+        display: none;
+    }
+
+    .divider-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .advice p {
+        font-size: 24px;
+    }
+
+    .icon-dice {
+        margin-left: 8.8rem;
+    
+        margin-top: 4.5rem;
+    }
+
+    .attribution { 
+        padding-top: 18rem; 
+        
+    }
+}
+
