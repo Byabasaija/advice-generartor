@@ -9,7 +9,7 @@ fetch(apiUrl)
     const  adviceId  = data.slip.id;
     const  adviceText  = data.slip.advice;
 
-    id.textContent = `${adviceId}`
+    id.textContent = `Advice #${adviceId}`
     advice.innerText = `${adviceText}`
     
 })
