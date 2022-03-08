@@ -12,8 +12,35 @@ body {
    margin: auto;
    background: hsl(217, 19%, 24%);
    height: 300px;
+   
    border-radius: 0.3rem;
    margin-top: 10%;
+
+}
+
+.divider-desktop {
+    display: block;
+    width: 100%;
+}
+
+.divider-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .advice {
+        width: 80%;
+        margin: auto;
+        margin-top: 30%;
+    }
+    .divider-desktop {
+        display: none;
+    }
+
+    .divider-mobile {
+        display: block;
+        width: 100%;
+    }
 }
 
 .advice-content {
@@ -42,15 +69,24 @@ body {
 }
 
 .icon-dice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 3rem;
     height: 3rem;
     position: absolute;
     background: hsl(150, 100%, 66%);
     border-radius: 50%;
-    margin-top: 19rem;
+    margin-top: 29rem;
+}
+
+.icon-dice:hover {
+    box-shadow: 0 0 10px hsl(150, 100%, 66%);
+    cursor:pointer;
 }
 
 .icon-dice img {
-    width: 70%;
-    margin: auto;
+    width: 1.5rem;
+    height: 1.5rem;
+
 }
