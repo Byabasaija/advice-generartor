@@ -2,7 +2,8 @@ const apiUrl = 'https://api.adviceslip.com/advice';
 const id = document.getElementById('advice');
 const advice = document.getElementById('advice-text');
 
-setInterval(() => {
+// on page page load generate advice
+
     fetch(apiUrl)
     .then((response)=> response.json())
     .then((data)=> {
@@ -17,4 +18,22 @@ setInterval(() => {
     .catch((error)=> {
         console.log(error.message)
     })
-},10000 );
+
+// On clicking the dice generate new advice
+
+const generateAdvice =() => {
+    fetch(apiUrl)
+    .then((response)=> response.json())
+    .then((data)=> {
+        
+        const  adviceId  = data.slip.id;
+        const  adviceText  = data.slip.advice;
+
+        id.textContent = `Advice #${adviceId}`
+        advice.innerText = `${adviceText}`
+        
+    })
+    .catch((error)=> {
+        console.log(error.message)
+    }) 
+}
