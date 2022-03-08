@@ -21,7 +21,8 @@ body {
 
 .divider-desktop {
     display: block;
-    width: 100%;
+    width: 80%;
+   
 }
 
 .divider-mobile {
@@ -34,9 +35,10 @@ body {
     align-items: center;
     justify-content: center;
     align-self: center;
-    width: 70%;
+    width: fit-content;
     margin: auto;
-    min-height: 200px;
+    height: fit-content;
+   
   
 }
 
@@ -54,6 +56,10 @@ body {
     font-weight: 800;
     text-align: center;
     font-size: 28px;
+    /* padding: 0 10px 0 10px; */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 .icon-dice {
@@ -65,9 +71,9 @@ body {
     position: absolute;
     background: hsl(150, 100%, 66%);
     border-radius: 50%;
-    margin-left: 21rem;
-    
-    margin-top: 4.5rem;
+    margin-left: 48.7%;
+
+    top: 48%;
 }
 
 .icon-dice:hover {
@@ -98,6 +104,11 @@ body {
         margin: auto;
         margin-top: 30%;
     }
+
+    .advice-content {
+        width: 70%;
+    }
+
     .divider-desktop {
         display: none;
     }
@@ -105,16 +116,19 @@ body {
     .divider-mobile {
         display: block;
         width: 100%;
+        padding: 0 10px 10px 10px;
     }
 
     .advice p {
-        font-size: 24px;
+        font-size: 20px;
+        width: fit-content;
+       
     }
 
     .icon-dice {
-        margin-left: 8.8rem;
+        margin-left: 43.7%;
     
-        margin-top: 4.5rem;
+        top: 53%;
     }
 
     .attribution { 
